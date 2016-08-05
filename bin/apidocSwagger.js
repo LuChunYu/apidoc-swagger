@@ -23,7 +23,9 @@ var argv = nomnom
 
     .option('input', { abbr: 'i', 'default': './', help: 'Input / source dirname.' })
 
-    .option('output', { abbr: 'o', 'default': './doc/', help: 'Output dirname.' })    
+    .option('output', { abbr: 'o', 'default': './doc/', help: 'Output dirname.' })
+
+    .option('definitions', { abbr: 'd', 'default': null, help: 'Standard definitions json file path'})
 
     .option('verbose', { abbr: 'v', flag: true, 'default': false, help: 'Verbose debug output.' })
 
@@ -126,6 +128,7 @@ var options = {
     includeFilters: argv['file-filters'],
     src           : argv['input'],
     dest          : argv['output'],
+    definitions   : argv['definitions'],
     verbose       : argv['verbose'],
     debug         : argv['debug'],
     parse         : argv['parse'],
