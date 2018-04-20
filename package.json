@@ -30,7 +30,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "apidoc-core": "0.3.1",
+    "apidoc-core": "git+https://github.com/LuChunYu/apidoc-core.git",
     "fs-extra": "^0.16.5",
     "lodash": "^3.5.0",
     "marked": "^0.3.3",
